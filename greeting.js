@@ -11,7 +11,7 @@ function paintGreeting(text) {
 }
 
 function loadName() {
-  const currentUser = loacalStorage.getItem(USER_LS);
+  const currentUser = localStorage.getItem(USER_LS);
   if (currentUser === null) {
   } else {
     paintGreeting(currentUser);
