@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BreakContinue07.html</title>
+    <script>
+        /*
+         * break, continue 사용법은 JAVA 랑 완전 똑같음.
+         *
+         * break : switch 문이나 반복문 빠져나갈때
+         * continue : 반복문 처음으로 돌아가기
+         *
+         */
+        var i = 0;
+        while (-1) { // while(true) 랑 동일 -1 도 true 로 간주됨
+            i++;
+            document.write('i = ' + i + '<br/>');
+            if (i == 3)
+                break;
+            document.write('break문 이후 <br/>');
+
+            if (i % 2 == 0)
+                continue;
+            document.write('continue문 이후 <br/>');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+[출처] [JavaScript] break / continue|작성자 창랑
